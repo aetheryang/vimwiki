@@ -1,6 +1,8 @@
-= My knowledge base=
-== copyright (c) aetheryang aetheryang@gmail.com ==
-  * My Urgent Tasks -- things to be done _yesterday_!!!
-  * Project Gutenberg
+ = aether's knowledge base=
+* copyright (c) aetheryang aetheryang@gmail.com
+
+* This page is made by [[vimwiki]]
+* 本页面由 [[vimwiki]] 制作
 == My knowlege ==
+[[Computer Using]]
 [[生命科学导论]]

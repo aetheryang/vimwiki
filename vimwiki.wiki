@@ -1,0 +1,96 @@
+= vimwiki 语法 =
+- [[local:vimwiki.txt| Full_English_Version]]
+- 文本字型
+  - `*粗体*` *粗体*
+  - `_斜体_` _斜体_
+  - `~~删除线~~` ~~删除线~~
+  - `代码(无语法)` `代码`
+  - `上标^上标^` 上标^上标^
+  - `下标,,下标,,` 下标,,下标,,
+- 链接
+  - `[[链接]]` 链接
+  - `[[链接|链接描述]]` 或 `[[链接][链接描述]]`
+  - 直接链接
+    http://code.google.com/p/vimwiki
+    mailto:habamax@gmail.com
+    ftp://vim.org
+
+  - Inline link: >
+    [Looks like this](URL)
+
+  - Image link: >
+    ![Looks like this](URL)
+- 标题
+  - `= 一级标题 =` 一级标题
+  - `= 二级标题 =` 二级标题
+  - `=` 前加空格使标题居中
+- 段落
+  - `- 段落一`
+  - `* 段落二`
+    - `- 子段落一`
+    - `* 子段落二`
+  - `- 和*` 可以混用
+  - 使用空行分段
+- 列表
+  - `# 第一`
+  - `# 第二`
+- 表格
+{{{
+      | head1  | head2  |
+      | -----  | -----  |
+      | value1 | value2 |
+      | value3 | value4 |
+}}}
+| head1  | head2  |
+| -----  | -----  |
+| value1 | value2 |
+| value3 | value4 |
+
+ | Year | Temperature (low) | Temperature (high) |
+ |------|-------------------|--------------------|
+ | 1900 | -10               | 25                 |
+ | 1910 | -15               | 30                 |
+ | 1920 | -10               | 32                 |
+ | 1930 | _N/A_             | _N/A_              |
+ | 1940 | -2                | 40                 |
+
+{{{
+| a  | b  | c | d |
+| \/ | e  | > | f |
+| \/ | \/ | > | g |
+| h  | >  | > | > |
+}}}
+ | a  | b  | c | d |
+ | \/ | e  | > | f |
+ | \/ | \/ | > | g |
+ | h  | >  | > | > |
+5.7. Preformatted text                           *vimwiki-syntax-preformatted*
+
+Use {{{ and }}} to define a block of preformatted text:
+{{{ >
+  Tyger! Tyger! burning bright
+   In the forests of the night,
+    What immortal hand or eye
+     Could frame thy fearful symmetry?
+  In what distant deeps or skies
+   Burnt the fire of thine eyes?
+    On what wings dare he aspire?
+     What the hand dare sieze the fire?
+}}}
+
+
+You can add optional information to {{{ tag: >
+{{{
+ <pre class="brush: python">
+ def hello(world):
+     for x in range(10):
+         print("Hello {0} number {1}".format(world, x))
+}}}
+
+- 注释
+ - `%% 注释`
+ %% this text would not be in HTML
+- 水平线
+  - 在行首四个或更多减号
+  - `----`
+----

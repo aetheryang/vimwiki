@@ -1,0 +1,326 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="style.css">
+<title>vimwiki</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+
+<h1 id="toc_1">vimwiki 语法</h1>
+<ul>
+<li>
+<a href="file:///home/yang/vimwiki/vimwiki.txt">Full_English_Version</a>
+
+<li>
+文本字型
+
+<ul>
+<li>
+<code>*粗体*</code> <strong>粗体</strong>
+
+<li>
+<code>_斜体_</code> <em>斜体</em>
+
+<li>
+<code>~~删除线~~</code> <del>删除线</del>
+
+<li>
+<code>代码(无语法)</code> <code>代码</code>
+
+<li>
+<code>上标^上标^</code> 上标<sup><small>上标</small></sup>
+
+<li>
+<code>下标,,下标,,</code> 下标<sub><small>下标</small></sub>
+
+</ul>
+<li>
+链接
+
+<ul>
+<li>
+<code>[[链接]]</code> 链接
+
+<li>
+<code>[[链接|链接描述]]</code> 或 <code>[[链接][链接描述]]</code>
+
+<li>
+直接链接
+    <a href="http://code.google.com/p/vimwiki">http://code.google.com/p/vimwiki</a>
+    <a href="mailto:habamax@gmail.com">mailto:habamax@gmail.com</a>
+    <a href="ftp://vim.org">ftp://vim.org</a>
+
+</ul>
+</ul>
+
+<ul>
+<li>
+Inline link: &gt;
+    [Looks like this](URL)
+
+</ul>
+
+<ul>
+<li>
+Image link: &gt;
+    ![Looks like this](URL)
+
+</ul>
+<li>
+标题
+
+<ul>
+<li>
+<code>= 一级标题 =</code> 一级标题
+
+<li>
+<code>= 二级标题 =</code> 二级标题
+
+<li>
+<code>=</code> 前加空格使标题居中
+
+</ul>
+<li>
+段落
+
+<ul>
+<li>
+<code>- 段落一</code>
+
+<li>
+<code>* 段落二</code>
+
+<ul>
+<li>
+<code>- 子段落一</code>
+
+<li>
+<code>* 子段落二</code>
+
+</ul>
+<li>
+<code>- 和*</code> 可以混用
+
+<li>
+使用空行分段
+
+</ul>
+<li>
+列表
+
+<ul>
+<li>
+<code># 第一</code>
+
+<li>
+<code># 第二</code>
+
+</ul>
+<li>
+表格
+<pre>
+      | head1  | head2  |
+      | -----  | -----  |
+      | value1 | value2 |
+      | value3 | value4 |
+</pre>
+
+<table>
+<tr>
+<td>
+head1
+</td>
+<td>
+head2
+</td>
+</tr>
+<tr>
+<td>
+-----
+</td>
+<td>
+-----
+</td>
+</tr>
+<tr>
+<td>
+value1
+</td>
+<td>
+value2
+</td>
+</tr>
+<tr>
+<td>
+value3
+</td>
+<td>
+value4
+</td>
+</tr>
+</table>
+
+<table class='center'>
+<tr>
+<th>
+Year
+</th>
+<th>
+Temperature (low)
+</th>
+<th>
+Temperature (high)
+</th>
+</tr>
+<tr>
+<td>
+1900
+</td>
+<td>
+-10
+</td>
+<td>
+25
+</td>
+</tr>
+<tr>
+<td>
+1910
+</td>
+<td>
+-15
+</td>
+<td>
+30
+</td>
+</tr>
+<tr>
+<td>
+1920
+</td>
+<td>
+-10
+</td>
+<td>
+32
+</td>
+</tr>
+<tr>
+<td>
+1930
+</td>
+<td>
+<em>N/A</em>
+</td>
+<td>
+<em>N/A</em>
+</td>
+</tr>
+<tr>
+<td>
+1940
+</td>
+<td>
+-2
+</td>
+<td>
+40
+</td>
+</tr>
+</table>
+
+<pre>
+| a  | b  | c | d |
+| \/ | e  | &gt; | f |
+| \/ | \/ | &gt; | g |
+| h  | &gt;  | &gt; | &gt; |
+</pre>
+<table class='center'>
+<tr>
+<td rowspan="3">
+a
+</td>
+<td>
+b
+</td>
+<td>
+c
+</td>
+<td>
+d
+</td>
+</tr>
+<tr>
+<td rowspan="2" colspan="2">
+e
+</td>
+<td>
+f
+</td>
+</tr>
+<tr>
+<td>
+g
+</td>
+</tr>
+<tr>
+<td colspan="4">
+h
+</td>
+</tr>
+</table>
+<p>
+5.7. Preformatted text                           <strong>vimwiki-syntax-preformatted</strong>
+</p>
+
+<p>
+Use {{{ and }}} to define a block of preformatted text:
+</p>
+<pre  &gt;>
+  Tyger! Tyger! burning bright
+   In the forests of the night,
+    What immortal hand or eye
+     Could frame thy fearful symmetry?
+  In what distant deeps or skies
+   Burnt the fire of thine eyes?
+    On what wings dare he aspire?
+     What the hand dare sieze the fire?
+</pre>
+
+
+<p>
+You can add optional information to {{{ tag: &gt;
+</p>
+<pre>
+ &lt;pre class="brush: python"&gt;
+ def hello(world):
+     for x in range(10):
+         print("Hello {0} number {1}".format(world, x))
+</pre>
+
+<ul>
+<li>
+注释
+
+<ul>
+<li>
+<code>%% 注释</code>
+
+</ul>
+<li>
+水平线
+
+<ul>
+<li>
+在行首四个或更多减号
+
+<li>
+<code>----</code>
+
+</ul>
+</ul>
+<hr />
+
+</body>
+</html>
