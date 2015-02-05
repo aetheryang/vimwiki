@@ -1,5 +1,8 @@
 = vimwiki 语法 =
+
 - [[local:vimwiki.txt| Full_English_Version]]
+- [[https://code.google.com/p/vim-script-cn/source/browse/trunk/doc/vimwiki.cnx|完整中文版本]]
+
 - 文本字型
   - `*粗体*` *粗体*
   - `_斜体_` _斜体_
@@ -7,6 +10,7 @@
   - `代码(无语法)` `代码`
   - `上标^上标^` 上标^上标^
   - `下标,,下标,,` 下标,,下标,,
+
 - 链接
   - `[[链接]]` 链接
   - `[[链接|链接描述]]` 或 `[[链接][链接描述]]`
@@ -15,55 +19,63 @@
     mailto:habamax@gmail.com
     ftp://vim.org
 
-  - Inline link: >
-    [Looks like this](URL)
-
-  - Image link: >
-    ![Looks like this](URL)
 - 标题
   - `= 一级标题 =` 一级标题
   - `= 二级标题 =` 二级标题
   - `=` 前加空格使标题居中
+
 - 段落
   - `- 段落一`
   - `* 段落二`
     - `- 子段落一`
     - `* 子段落二`
-  - `- 和*` 可以混用
-  - 使用空行分段
-- 列表
   - `# 第一`
   - `# 第二`
-- 表格
 {{{
-      | head1  | head2  |
-      | -----  | -----  |
-      | value1 | value2 |
-      | value3 | value4 |
+- 段落
+* 段落
+  *  子段落
+    # 子子第一
+    # 子子第二
+* 段落
 }}}
+  - `- 和*` 可以混用
+  - 使用空行分段
+
+- 表格
+  - 基本表格
+  {{{
+  | head1  | head2  |
+  | value1 | value2 |
+  | value3 | value4 |
+  }}}
 | head1  | head2  |
-| -----  | -----  |
 | value1 | value2 |
 | value3 | value4 |
 
- | Year | Temperature (low) | Temperature (high) |
- |------|-------------------|--------------------|
- | 1900 | -10               | 25                 |
- | 1910 | -15               | 30                 |
- | 1920 | -10               | 32                 |
- | 1930 | _N/A_             | _N/A_              |
- | 1940 | -2                | 40                 |
+  - 表头高亮
+  {{{
+  | head1  | head2  |
+  |--------|--------|
+  | value1 | value2 |
+  | value3 | value4 |
+  }}}
+| head1  | head2  |
+|--------|--------|
+| value1 | value2 |
+| value3 | value4 |
 
-{{{
+  - 手动排列表格
+  {{{
+  | a  | b  | c | d |
+  | \/ | e  | > | f |
+  | \/ | \/ | > | g |
+  | h  | >  | > | > |
+  }}}
 | a  | b  | c | d |
 | \/ | e  | > | f |
 | \/ | \/ | > | g |
 | h  | >  | > | > |
-}}}
- | a  | b  | c | d |
- | \/ | e  | > | f |
- | \/ | \/ | > | g |
- | h  | >  | > | > |
 5.7. Preformatted text                           *vimwiki-syntax-preformatted*
 
 Use {{{ and }}} to define a block of preformatted text:
@@ -86,11 +98,100 @@ You can add optional information to {{{ tag: >
      for x in range(10):
          print("Hello {0} number {1}".format(world, x))
 }}}
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script> type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"</script>
+- 数学公式
+  - 内联公式$$
+$ \sum_i a_i^2 = 1 $
+{{$
+\sum_i a_i^2
+=
+1
+}}$
+请添加 `<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> `
 
 - 注释
  - `%% 注释`
  %% this text would not be in HTML
+
+- 标题
+  - `%title 标题`
+
+- 不转换 html
+  - `%nohtml`
+
 - 水平线
   - 在行首四个或更多减号
   - `----`
+
 ----
+以下内容转载自[[http://wiki.ktmud.com/tips/vim/vimwiki-guide.html|丘迟的维基世界]]
+----
+
+- 在wiki里使用更多的HTML标签
+
+vimwiki 有一个 g:vimwiki_valid_html_tags 值，可以指定允许写在 wiki 中的HTML标签。 g:vimwiki_valid_html_tags 的默认值是 'b,i,s,u,sub,sup,kbd,br,hr' ，也就是说，当你在 wiki 中输入：
+
+    `<b>Hello</b> <strong>Hello</stong>`
+
+输出的HTML会显示为：
+
+    <b>Hello</b> <strong>Hello</stong>
+
+标签 b 被当作可用的HTML标签，而 strong 则输出为文本。
+
+但有时候我们需要建立更强大的维基页面，不只用到这几个标签。比如本站首页的“有什么特别的”部分，就是一个有特定 class 和 id 的 div。于是在 vimrc 中定义：
+
+    `let g:vimwiki_valid_html_tags='b,i,s,u,sub,sup,kbd,br,hr,div,del,code'`
+
+在这里我添加了 div, del, code 三个标签。
+
+但是，非常不幸，当我们需要在维基里贴HTML代码，即使我们把代码放到了 {{{ }}} 包裹的 pre 里，这几个标签还是会被输出为实际的HTML标签，而不是文本。
+
+解决办法还是修改 vimwiki_html.vim 这个文件。
+
+找到 " WIKI2HTML "{{{ 所在行，也就是开始转换HTML的地方。
+
+在前面添加一个函数：
+
+function s:parse_tag_keeper(line)
+  let line = substitute(a:line,'\\&lt;',
+        \'\&lt;', 'g')
+  let line = substitute(line,'\\&gt;',
+        \'\&gt;', 'g')
+  return line
+endfunction
+
+然后在之后的 s:parse_line(line, state) 函数内，插入这个函数的调用：
+
+    ...
+
+    let line = s:safe_html(a:line)
+    let line = s:parse_tag_keeper(line)
+
+这样如果我们用 <tag> 的形式输入 valid_html_tags 包括的标签，输出的HTML就会把它们当成文本处理了。
+
+在写本文时，我需要输出 {{{ }}} ，而这对标记被作为了 wiki 里 pre 区块的 pattern 。于是就还要再写一个函数：
+
+function s:parse_pre_keeper(line)
+  let line = substitute(a:line,'\\{\\{\\{',
+        \'{{{', 'g')
+  let line = substitute(line,'\\}\\}\\}',
+        \'}}}', 'g')
+  return line
+endfunction
+
+就把它定义在 s:parse_tag_keeper 之后吧。但调用的时候怎么办呢？肯定要放在 vimwiki_html.vim 处理了 pre 区块之后。思来想去，只能放在刚好要输出HTML文件的时候。但是 vim 的 writefile 函数，接受的参数是一个 list （相当于数组），而不是字串。既然如此，我们就把输出结果给合并了再替换，然后再包装成 list 。
+
+找到这句：
+
+    call writefile(ldest, path.wwFileNameOnly.'.html')
+
+稍微修改一下：
+
+let output = join(ldest, "\n\r")
+let output = s:parse_pre_keeper(output)
+let outputlist = split(output, "\n\r")
+call writefile(outputlist, path.wwFileNameOnly.'.html')
+
+之所以还要再split，是因为writefile写入的 NL 是无法用字符模拟的。这样当然会造成性能问题，如果有知道更好解决方案的，请留言告诉我。
