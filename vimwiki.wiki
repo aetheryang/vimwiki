@@ -1,3 +1,5 @@
+%template math_template
+
 = vimwiki 语法 =
 
 - [[local:vimwiki.txt| Full_English_Version]]
@@ -98,8 +100,6 @@ You can add optional information to {{{ tag: >
      for x in range(10):
          print("Hello {0} number {1}".format(world, x))
 }}}
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<script> type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"</script>
 - 数学公式
   - 内联公式$$
 $ \sum_i a_i^2 = 1 $
