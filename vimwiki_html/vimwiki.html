@@ -1,12 +1,14 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<link rel="Stylesheet" type="text/css" href="style.css">
-<title>vimwiki</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-</head>
-<body>
 
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="style.css" />
+    <title>vimwiki</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> 
+  </head>
+  <body>
+    <div class="content">
+      
 
 <h1 id="toc_1">vimwiki 语法</h1>
 
@@ -283,20 +285,35 @@ You can add optional information to {{{ tag: &gt;
 
 <ul>
 <li>
-内联公式$$
+内联公式<code>\( \sum_i a_i^3 = 1 \)</code>
 
 </ul>
 </ul>
 <p>
 \( \sum_i a_i^2 = 1 \)
 </p>
+<ul>
+<li>
+居中公式 <code>{{\( ... }}\)</code>
+
+<li>
+<code>\sum_i a_i^2</code>
+
+<li>
+<code>=</code>
+
+<li>
+<code>1</code>
 \[
 \sum_i a_i^2
 =
 1
 \]
+
+</ul>
 <p>
 请添加 <code>&lt;script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"&gt;&lt;/script&gt; </code>
+至模板中
 </p>
 
 <ul>
@@ -484,5 +501,7 @@ call writefile(outputlist, path.wwFileNameOnly.'.html')
 之所以还要再split，是因为writefile写入的 NL 是无法用字符模拟的。这样当然会造成性能问题，如果有知道更好解决方案的，请留言告诉我。
 </p>
 
-</body>
+    </div>
+  </body>
 </html>
+
