@@ -1,0 +1,44 @@
+# NAME
+  - Yang Guoxin
+# BIRTHDAY
+  - 1994.02.10
+# EDUCATION
+ - Sept.2011–present
+    University of Science and Technology of China(USTC)
+    The School of Gifted Young
+    majoring in Applied Physics
+    Microelectronics in the Department of Physics
+# SKILLS
+  - Linux, particular openSUSE
+  - C/C++, ruby
+  - matlab, L A TEX
+  - working under the Command line
+  - know about qt, rails
+# ACTIVITIES
+  - 2013.09.21 speaker of Software Freedom Day
+  - 2012–present translator of opensuse-manuals on transifex
+# CONTACT
+  email: aetheryang@gmail.com
+  mobile: 15505516935
+  github: https://github.com/aetheryang
+
+# 姓名
+  - 杨 国鑫
+# 生日
+  - 1994.02.10
+# 教育
+  - 2011年9月-现在
+    中国科学技术大学少年班学院微电子与固体物理专业
+# 技能
+  - Linux, openSUSE 作为生产环境
+  - C/C++, ruby
+  - matlab, LATEX
+  - 命令行下工作
+  - 了解 qt ， rails
+# 活动
+  - 2013.09.21 自由软件日演讲人
+  - 2012至今 opensuse-manuals 中文翻译工作
+# 联系方式
+  - 电邮：aetheryang@gmail.com
+  - 手机：15505516935
+  - github: https://github.com/aetheryang

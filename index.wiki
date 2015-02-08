@@ -1,11 +1,10 @@
  = aether's knowledge base=
-* copyright (c) aetheryang aetheryang@gmail.com
+* Copyright (c) 2015 aetheryang All rights reserved
+* [[aetheryang]] aetheryang@gmail.com
 
 * This page is made by [[vimwiki]]
 * 本页面由 [[vimwiki]] 制作
 == My knowlege ==
-- [[Computer Using]]
-- [[生命科学导论]]
-- biaoti -
--- er biao ti --
-''xieti''
+* [[Computer Using]]
+* [[生命科学导论]]
+* [[德语]]
