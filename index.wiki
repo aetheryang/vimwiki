@@ -1,6 +1,6 @@
  = aether's knowledge base=
 * Copyright (c) 2015 aetheryang All rights reserved
-* [[aetheryang]] aetheryang@gmail.com
+* [[aetheryang]] *aetheryang@gmail.com*
 
 * This page is made by [[vimwiki]]
 * 本页面由 [[vimwiki]] 制作

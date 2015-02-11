@@ -1,0 +1,51 @@
+%template german_template
+
+形容词做名词的定语时，须加一定的词尾，使其与被修饰的名词在性，数，格上一致。
+
+= 形容词的弱变化
+
+
+  - 形容词前面如果有定冠词或指示代词等，形容词词尾属弱变化。
+|    |   | 阳性 m.             | 中性 n.              | 阴性 f.            |
+|----|---|---------------------|----------------------|--------------------|
+| 单 | N | der groß<tail>e</tail> Tisch    | das schön<tail>e</tail> Bild     | die klein<tail>e</tail> Lampe   |
+| \/ | G | des groß<tail>en</tail> Tisches | des schön<tail>en</tail> Bildes  | der klein<tail>en</tail> Lampe  |
+| 数 | D | dem groß<tail>en</tail> Tisch   | dem schön<tail>en</tail> Bild    | der klein<tail>en</tail> Lampe  |
+| SI | A | den groß<tail>en</tail> Tisch   | das schön<tail>e</tail> Bild     | die klein<tail>e</tail> Lampe   |
+| .. | - | -----------------   | ------------------   | -------------      |
+| 复 | N | die grpß<tail>en</tail> Tishche | die schön<tail>en</tail> Bilder  | die klein<tail>en</tail> Lampen |
+| \/ | G | der groß<tail>en</tail> Tische  | der schön<tail>en</tail> Bilder  | der klein<tail>en</tail> Lampen |
+| 数 | D | den grpß<tail>en</tail> Tischen | den schön<tail>en</tail> Bildern | den klein<tail>en</tail> Lampen |
+| PL | A | die grpß<tail>en</tail> Tishe   | die schön<tail>en</tail> Bilder  | die klein<tail>en</tail> Lampen |
+
+= 形容词的强变化
+
+  - 形容词前面如果没有冠词或指示代词，物主代词和 kein ，则形容词词尾属强变化。
+|    |   | 阳性 m.           | 中性 n.            | 阴性 f.       |
+|----|---|-------------------|--------------------|---------------|
+| 单 | N | groß<tail>er</tail> Tisch   | schön*es* Bild    | alt<tail>e</tail> Uhr    |
+| \/ | G | gorß<tail>en</tail> Tisches | schön<tail>en</tail> Bildes  | alt<tail>er</tail> Uhr   |
+| 数 | D | groß<tail>em</tail> Tisch   | schön<tail>em</tail> Bild    | alt<tail>er</tail> Uhr   |
+| SI | A | groß<tail>en</tail> Tisch   | schön*es* Bild    | alt<tail>e</tail> Uhr    |
+| .. | - | ----------------- | ------------------ | ------------- |
+| 复 | N | groß<tail>e</tail> Tisch    | schön<tail>e</tail> Bilder   | alt<tail>e</tail> Uhren  |
+| \/ | G | groß<tail>er</tail> Tisch   | schön<tail>er</tail> Bilder  | alt<tail>er</tail> Uhren |
+| 数 | D | groß<tail>en</tail> Tischen | schön<tail>en</tail> Bildern | alt<tail>en</tail> Uhren |
+| PL | A | groß<tail>e</tail> Tisch    | schön<tail>e</tail> Bilder   | alt<tail>e</tail> Uhren  |
+
+= 形容词的混合变化
+
+  - 形容词前面如果有不定冠词，物主代词或 kein ，则形容词词尾属混合变化。
+|    |   | 阳性 m.                 | 中性 n.              | 阴性 f.                |
+|----|---|-------------------------|----------------------|------------------------|
+| 单 | N | ein gut<tail>er</tail> Lehrer      | ein alt*es* Auto     | eine klein<tail>e</tail> Lampe    |
+| \/ | G | eines gut<tail>en</tail> Lehrers   | eines alt<tail>en</tail> Autos  | einer klein<tail>en</tail> Lampe  |
+| 数 | D | einem gut<tail>en</tail> Lehrer    | einem alt<tail>en</tail> Auto   | einer klein<tail>en</tail> Lampe  |
+| SI | A | einen gut<tail>en</tail> lehrer    | ein alt*es* Auto     | eine klein<tail>e</tail> Lampe    |
+| .. | - | -----------------       | ------------------   | -------------          |
+| 复 | N | unsere gut<tail>en</tail> Lehrer   | kein alt<tail>en</tail> Autos   | ihre klein<tail>en</tail> Lampen  |
+| \/ | G | unserer gut<tail>en</tail> Lehrer  | keiner alt<tail>en</tail> Autos | ihrer klein<tail>en</tail> Lampen |
+| 数 | D | unseren gut<tail>en</tail> Lehrern | keinen alt<tail>en</tail> Autos | ihren klein<tail>en</tail> Lampen |
+| PL | A | unsere gut<tail>en</tail> Lehrer   | keine alt<tail>en</tail> Autos  | ihre klein<tail>en</tail> Lampen  |
+
+
