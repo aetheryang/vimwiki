@@ -1,17 +1,27 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
 <html>
-<head>
-<link rel="Stylesheet" type="text/css" href="style.css">
-<title>vimwiki</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-</head>
-<body>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="style.css" />
+    <title>vimwiki</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> 
+  </head>
+  <body>
+    <div class="content">
+      
 
 <h1 id="toc_1">vimwiki 语法</h1>
+
 <ul>
 <li>
 <a href="file:///home/yang/vimwiki/vimwiki.txt">Full_English_Version</a>
 
+<li>
+<a href="https://code.google.com/p/vim-script-cn/source/browse/trunk/doc/vimwiki.cnx">完整中文版本</a>
+
+</ul>
+
+<ul>
 <li>
 文本字型
 
@@ -35,6 +45,9 @@
 <code>下标,,下标,,</code> 下标<sub><small>下标</small></sub>
 
 </ul>
+</ul>
+
+<ul>
 <li>
 链接
 
@@ -56,18 +69,6 @@
 
 <ul>
 <li>
-Inline link: &gt;
-    [Looks like this](URL)
-
-</ul>
-
-<ul>
-<li>
-Image link: &gt;
-    ![Looks like this](URL)
-
-</ul>
-<li>
 标题
 
 <ul>
@@ -81,6 +82,9 @@ Image link: &gt;
 <code>=</code> 前加空格使标题居中
 
 </ul>
+</ul>
+
+<ul>
 <li>
 段落
 
@@ -100,32 +104,43 @@ Image link: &gt;
 
 </ul>
 <li>
+<code># 第一</code>
+
+<li>
+<code># 第二</code>
+<pre>
+- 段落
+* 段落
+  *  子段落
+    # 子子第一
+    # 子子第二
+* 段落
+</pre>
+
+<li>
 <code>- 和*</code> 可以混用
 
 <li>
 使用空行分段
 
 </ul>
-<li>
-列表
+</ul>
 
 <ul>
 <li>
-<code># 第一</code>
-
-<li>
-<code># 第二</code>
-
-</ul>
-<li>
 表格
+
+<ul>
+<li>
+基本表格
 <pre>
-      | head1  | head2  |
-      | -----  | -----  |
-      | value1 | value2 |
-      | value3 | value4 |
+  | head1  | head2  |
+  | value1 | value2 |
+  | value3 | value4 |
 </pre>
 
+</ul>
+</ul>
 <table>
 <tr>
 <td>
@@ -133,14 +148,6 @@ head1
 </td>
 <td>
 head2
-</td>
-</tr>
-<tr>
-<td>
------
-</td>
-<td>
------
 </td>
 </tr>
 <tr>
@@ -161,82 +168,56 @@ value4
 </tr>
 </table>
 
-<table class='center'>
+<ul>
+<li>
+表头高亮
+<pre>
+  | head1  | head2  |
+  |--------|--------|
+  | value1 | value2 |
+  | value3 | value4 |
+</pre>
+
+</ul>
+<table>
 <tr>
 <th>
-Year
+head1
 </th>
 <th>
-Temperature (low)
-</th>
-<th>
-Temperature (high)
+head2
 </th>
 </tr>
 <tr>
 <td>
-1900
+value1
 </td>
 <td>
--10
-</td>
-<td>
-25
+value2
 </td>
 </tr>
 <tr>
 <td>
-1910
+value3
 </td>
 <td>
--15
-</td>
-<td>
-30
-</td>
-</tr>
-<tr>
-<td>
-1920
-</td>
-<td>
--10
-</td>
-<td>
-32
-</td>
-</tr>
-<tr>
-<td>
-1930
-</td>
-<td>
-<em>N/A</em>
-</td>
-<td>
-<em>N/A</em>
-</td>
-</tr>
-<tr>
-<td>
-1940
-</td>
-<td>
--2
-</td>
-<td>
-40
+value4
 </td>
 </tr>
 </table>
 
+<ul>
+<li>
+手动排列表格
 <pre>
-| a  | b  | c | d |
-| \/ | e  | &gt; | f |
-| \/ | \/ | &gt; | g |
-| h  | &gt;  | &gt; | &gt; |
+  | a  | b  | c | d |
+  | \/ | e  | &gt; | f |
+  | \/ | \/ | &gt; | g |
+  | h  | &gt;  | &gt; | &gt; |
 </pre>
-<table class='center'>
+
+</ul>
+<table>
 <tr>
 <td rowspan="3">
 a
@@ -298,6 +279,42 @@ You can add optional information to {{{ tag: &gt;
      for x in range(10):
          print("Hello {0} number {1}".format(world, x))
 </pre>
+<ul>
+<li>
+数学公式
+
+<ul>
+<li>
+内联公式<code>\( \sum_i a_i^3 = 1 \)</code>
+
+</ul>
+</ul>
+<p>
+\( \sum_i a_i^2 = 1 \)
+</p>
+<ul>
+<li>
+居中公式 <code>{{\( ... }}\)</code>
+
+<li>
+<code>\sum_i a_i^2</code>
+
+<li>
+<code>=</code>
+
+<li>
+<code>1</code>
+\[
+\sum_i a_i^2
+=
+1
+\]
+
+</ul>
+<p>
+请添加 <code>&lt;script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"&gt;&lt;/script&gt; </code>
+至模板中
+</p>
 
 <ul>
 <li>
@@ -308,6 +325,31 @@ You can add optional information to {{{ tag: &gt;
 <code>%% 注释</code>
 
 </ul>
+</ul>
+
+<ul>
+<li>
+标题
+
+<ul>
+<li>
+<code>%title 标题</code>
+
+</ul>
+</ul>
+
+<ul>
+<li>
+不转换 html
+
+<ul>
+<li>
+<code>%nohtml</code>
+
+</ul>
+</ul>
+
+<ul>
 <li>
 水平线
 
@@ -320,7 +362,146 @@ You can add optional information to {{{ tag: &gt;
 
 </ul>
 </ul>
-<hr />
 
-</body>
+<hr />
+<p>
+以下内容转载自<a href="http://wiki.ktmud.com/tips/vim/vimwiki-guide.html">丘迟的维基世界</a>
+<hr />
+</p>
+
+<ul>
+<li>
+在wiki里使用更多的HTML标签
+
+</ul>
+
+<p>
+vimwiki 有一个 g:vimwiki_valid_html_tags 值，可以指定允许写在 wiki 中的HTML标签。 g:vimwiki_valid_html_tags 的默认值是 'b,i,s,u,sub,sup,kbd,br,hr' ，也就是说，当你在 wiki 中输入：
+</p>
+<blockquote>
+<code>&lt;b&gt;Hello&lt;/b&gt; &lt;strong&gt;Hello&lt;/stong&gt;</code>
+</blockquote>
+
+<p>
+输出的HTML会显示为：
+</p>
+<blockquote>
+<b>Hello</b> &lt;strong&gt;Hello&lt;/stong&gt;
+</blockquote>
+
+<p>
+标签 b 被当作可用的HTML标签，而 strong 则输出为文本。
+</p>
+
+<p>
+但有时候我们需要建立更强大的维基页面，不只用到这几个标签。比如本站首页的“有什么特别的”部分，就是一个有特定 class 和 id 的 div。于是在 vimrc 中定义：
+</p>
+<blockquote>
+<code>let g:vimwiki_valid_html_tags='b,i,s,u,sub,sup,kbd,br,hr,div,del,code'</code>
+</blockquote>
+
+<p>
+在这里我添加了 div, del, code 三个标签。
+</p>
+
+<p>
+但是，非常不幸，当我们需要在维基里贴HTML代码，即使我们把代码放到了 {{{ }}} 包裹的 pre 里，这几个标签还是会被输出为实际的HTML标签，而不是文本。
+</p>
+
+<p>
+解决办法还是修改 vimwiki_html.vim 这个文件。
+</p>
+
+<p>
+找到 " WIKI2HTML "{{{ 所在行，也就是开始转换HTML的地方。
+</p>
+
+<p>
+在前面添加一个函数：
+</p>
+
+<p>
+function s:parse_tag_keeper(line)
+  let line = substitute(a:line,'\\&amp;lt;',
+</p>
+<blockquote>
+\'\&amp;lt;', 'g')
+</blockquote>
+<p>
+  let line = substitute(line,'\\&amp;gt;',
+</p>
+<blockquote>
+\'\&amp;gt;', 'g')
+</blockquote>
+<p>
+  return line
+endfunction
+</p>
+
+<p>
+然后在之后的 s:parse_line(line, state) 函数内，插入这个函数的调用：
+</p>
+<blockquote>
+...
+</blockquote>
+<blockquote>
+let line = s:safe_html(a:line)
+let line = s:parse_tag_keeper(line)
+</blockquote>
+
+<p>
+这样如果我们用 &lt;tag&gt; 的形式输入 valid_html_tags 包括的标签，输出的HTML就会把它们当成文本处理了。
+</p>
+
+<p>
+在写本文时，我需要输出 {{{ }}} ，而这对标记被作为了 wiki 里 pre 区块的 pattern 。于是就还要再写一个函数：
+</p>
+
+<p>
+function s:parse_pre_keeper(line)
+  let line = substitute(a:line,'\\{\\{\\{',
+</p>
+<blockquote>
+\'{{{', 'g')
+</blockquote>
+<p>
+  let line = substitute(line,'\\}\\}\\}',
+</p>
+<blockquote>
+\'}}}', 'g')
+</blockquote>
+<p>
+  return line
+endfunction
+</p>
+
+<p>
+就把它定义在 s:parse_tag_keeper 之后吧。但调用的时候怎么办呢？肯定要放在 vimwiki_html.vim 处理了 pre 区块之后。思来想去，只能放在刚好要输出HTML文件的时候。但是 vim 的 writefile 函数，接受的参数是一个 list （相当于数组），而不是字串。既然如此，我们就把输出结果给合并了再替换，然后再包装成 list 。
+</p>
+
+<p>
+找到这句：
+</p>
+<blockquote>
+call writefile(ldest, path.wwFileNameOnly.'.html')
+</blockquote>
+
+<p>
+稍微修改一下：
+</p>
+
+<p>
+let output = join(ldest, "\n\r")
+let output = s:parse_pre_keeper(output)
+let outputlist = split(output, "\n\r")
+call writefile(outputlist, path.wwFileNameOnly.'.html')
+</p>
+
+<p>
+之所以还要再split，是因为writefile写入的 NL 是无法用字符模拟的。这样当然会造成性能问题，如果有知道更好解决方案的，请留言告诉我。
+</p>
+
+    </div>
+  </body>
 </html>
+
