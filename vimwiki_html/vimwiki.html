@@ -4,9 +4,19 @@
     <link rel="Stylesheet" type="text/css" href="./css/style.css" />
     <title>vimwiki</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> 
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   </head>
   <body>
+
+    <div id="page_footer">
+      <ul>
+        <a href="./index.html">回到主页</a>
+        <a href="#top">回到页首</a>
+      </ul>
+    </div>
+
+    <div id="top"></div>
+
     <div class="content">
       
 
@@ -501,6 +511,12 @@ call writefile(outputlist, path.wwFileNameOnly.'.html')
 之所以还要再split，是因为writefile写入的 NL 是无法用字符模拟的。这样当然会造成性能问题，如果有知道更好解决方案的，请留言告诉我。
 </p>
 
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
     </div>
   </body>
 </html>

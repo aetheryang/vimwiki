@@ -77,3 +77,6 @@ code {
     border: 1px solid #ccc;
     background-color: DarkSlateGray;
 }
+#page_footer {position: fixed; left: 0; width: 100%; border: 1px; bottom: 0;
+                  color: red; background: lightskyblue; height: 40px;}
+#page_footer a {float: right; width: 200px;}
