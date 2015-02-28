@@ -78,3 +78,7 @@ code {
     background-color: DarkSlateGray;
 }
 tail {color: red}
+slight {color: green}
+#page_footer {position: fixed; left: 0; width: 100%; border: 1px; bottom: 0;
+                  color: red; background: lightskyblue; }
+#page_footer a {float: right; width: 200px;}

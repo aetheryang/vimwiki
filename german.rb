@@ -9,10 +9,17 @@ class String
   gsub!("\\U", "Ü")
   gsub!("\\s", "ß")
   # Change the *.* in to the tail mode
-  gsub!("*e*", '<tail>e</tail>')
-  gsub!("*en*", '<tail>en</tail>')
-  gsub!("*er*", '<tail>er</tail>')
-  gsub!("*em*", '<tail>em</tail>')
+  gsub!("&e&", '<slight>e</slight>')
+  gsub!("&t&", '<slight>t</slight>')
+  gsub!("&a&", '<slight>a</slight>')
+  gsub!("&ie&", '<slight>ie</slight>')
+  gsub!("&i&", '<slight>i</slight>')
+  gsub!("@e@", '<tail>e</tail>')
+  gsub!("@en@", '<tail>en</tail>')
+  gsub!("@er@", '<tail>er</tail>')
+  gsub!("@em@", '<tail>em</tail>')
+  gsub!("@t@", '<tail>t</tail>')
+  gsub!("@st@", '<tail>t</tail>')
   return self
   end
 end

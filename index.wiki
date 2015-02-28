@@ -1,3 +1,4 @@
+%title aether's base
  = aether's knowledge base=
 * Copyright (c) 2015 aetheryang All rights reserved
 * [[aetheryang]] *aetheryang@gmail.com*
