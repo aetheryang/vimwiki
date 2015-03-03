@@ -2,8 +2,18 @@
 <html>
   <head>
     <link rel="Stylesheet" type="text/css" href="./css/style.css" />
-    <title>语法</title>
+    <title>%title%</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript">
+$(document).ready(function(){
+    $("div.content").children().children().children().hide();
+    $("div.content").children().children().show();
+    $("div.content").children().children().click(function(){
+      $(this).children().toggle();
+    });
+});
+    </script>
   </head>
 
   <body>
@@ -17,39 +27,7 @@
     <div id="top"></div>
 
     <div class="content">
-      
-<p>
-= 词法
-</p>
-<ul>
-<li>
-<a href="名词.html">名词</a>
-
-<li>
-<a href="动词.html">动词</a>
-
-<li>
-<a href="形容词.html">形容词</a>
-
-<li>
-介词
-
-<li>
-连词
-
-</ul>
-<p>
-= 时态
-</p>
-<ul>
-<li>
-<a href="将来时.html">将来时</a>
-
-</ul>
-<p>
-= 句法
-</p>
-
+      %content%
       <br>
       <br>
       <br>

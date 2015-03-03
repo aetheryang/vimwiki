@@ -18,9 +18,10 @@
   - 2013.09.21 speaker of Software Freedom Day
   - 2012–present translator of opensuse-manuals on transifex
 # CONTACT
-  email: aetheryang@gmail.com
-  mobile: 15505516935
-  github: https://github.com/aetheryang
+  - email: aetheryang@gmail.com
+  - mobile: 15505516935
+  - github: https://github.com/aetheryang
+  - page: https://aetheryang.github.io
 
 # 姓名
   - 杨 国鑫
@@ -42,3 +43,4 @@
   - 电邮：aetheryang@gmail.com
   - 手机：15505516935
   - github: https://github.com/aetheryang
+  - 主页: https://aetheryang.github.io
