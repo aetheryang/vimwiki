@@ -1,0 +1,17 @@
+- 构成 : werden 的现在时 + 不定式
+
+| ich werde fahren      | wir werden fahren |
+| du wirst fahren       | ihr werdet fahren |
+| er/sie/es wird fahren | sie werden fahren |
+| Sie werden fahren     | >                 |
+
+| ich       | werde  |
+| du        | wirst  |
+| er/sie/es | wird   |
+| wir       | werden |
+| ihr       | werdet |
+| sie       | werden |
+| Sie       | werden |
+- 用法：
+  - 表示将来发生的事，口语中常用现在时代替
+  - 表示“猜测”，常用于第三人称，句中常有 sicher（一定） wohl（大概） vieleicht（也许） 等副词

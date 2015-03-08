@@ -1,0 +1,15 @@
+%template my_list_template
+# -schaft (-ship) 产物 名物化后缀
+  - eigen(自己的) -> Eigenschaft(性质)
+  - Land(地，国) -> Landschaft(风景)
+  - Freund(朋友) -> Freundschaft(友谊)
+# freuen
+  # refl 感到高兴 Warum freuen wir uns?
+  # Vt 使高兴
+
+- 句子
+  # Sie werden den Bezirk sichern
+    # sicher adj 安全的，准确的，有效的，可靠的
+    # sichern 使。。。安全
+  # Ich werde dich schützen
+    # schützen 保护
