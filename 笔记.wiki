@@ -6,3 +6,10 @@
 # freuen
   # refl 感到高兴 Warum freuen wir uns?
   # Vt 使高兴
+
+- 句子
+  # Sie werden den Bezirk sichern
+    # sicher adj 安全的，准确的，有效的，可靠的
+    # sichern 使。。。安全
+  # Ich werde dich schützen
+    # schützen 保护
