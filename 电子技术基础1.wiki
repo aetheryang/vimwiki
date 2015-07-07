@@ -1,0 +1,8 @@
+- operational amplifier
+  - common mode voltage         :0
+  - differential mode voltage   :infinite
+  - Rin                         :infinite
+  - Rout                        :0
+  - other ideal features
+- Eo = -Ad(E_ - E+) - Ac(E_ + E+)/2
+  - ideal: Ad = inf Ac = 0

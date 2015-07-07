@@ -6,10 +6,44 @@
 # freuen
   # refl 感到高兴 Warum freuen wir uns?
   # Vt 使高兴
+# erfahren
+  # Vt (erfuhr, haben erfahren)
+    # 得知
+      # Das habe ich nur durch Zufal erfahren
+    # 遭受
+      # Er musste es am eigenen leibe erfahren
+    # 得到发展
+      # Das Bildungswesen hat eine enorme Entwicklung
+  # adj 有经验的
+# Fachrichtung
+  # die;-,-en 专业
+# Mechanik
+  # die;-,-en 力学，机械学，机械装置
+# aufgeben
+<div id="aufgeben">
+# Vt
+  # 邮寄
+  # 把...盛在盘子里
+  # 把...交给，述说
+  # 放弃
+  # 认为...没有指望
+# Vi
+  # 中途退出比赛
+</div>
 
 - 句子
+
   # Sie werden den Bezirk sichern
     # sicher adj 安全的，准确的，有效的，可靠的
     # sichern 使。。。安全
   # Ich werde dich schützen
     # schützen 保护
+  # Ich werde es nicht vermeiden.
+  # Der Unterricht dauert eine Stunde.
+  # Er steht den Studenten zur Verfügung.
+    # Verfügung die;-en 支配
+  # Sie fahren mit dem Zug.
+  # Zuerst steigen sie auf den Michaelis Turm.
+  # Verloren ist nur, wer sich selbst aufgibt.
+    # verloren 失去的，无望的，徒劳无意的
+    # <a href=#aufgeben>aufgeben</a>
