@@ -1,0 +1,22 @@
+- sein & haben
+
+| 人称      | sein | haben |
+|-----------|------|-------|
+| ich       | bin  | habe  |
+| du        | bist | hast  |
+| er/sie/es | ist  | hat   |
+| wir       | sind | haben |
+| ihr       | seid | habt  |
+| sie/Sie   | sind | haben |
+
+- 动词现在时变位
+
+| 人称      | lernen | machen | bilden  | 词尾 |
+|-----------|--------|--------|---------|------|
+| ich       | lerne  | mache  | bilde   | -e   |
+| du        | lernst | machst | bildest | -st  |
+| er/sie/es | lernt  | macht  | bildet  | -t   |
+| wir       | lernen | machen | bilden  | -en  |
+| ihr       | lernt  | mscht  | bildet  | -t   |
+| sie/Sie   | lernen | machen | bilden  | -en  |
+

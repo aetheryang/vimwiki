@@ -1,5 +1,5 @@
 # NAME
-  - Yang Guoxin
+  - Yang, Guoxin
 # BIRTHDAY
   - 1994.02.10
 # EDUCATION
@@ -8,6 +8,8 @@
     The School of Gifted Young
     majoring in Applied Physics
     Microelectronics in the Department of Physics
+ - GPA: 2.15
+ - Graduation thesis
 # SKILLS
   - Linux, particular openSUSE
   - C/C++, ruby
@@ -17,6 +19,7 @@
 # ACTIVITIES
   - 2013.09.21 speaker of Software Freedom Day
   - 2012–present translator of opensuse-manuals on transifex
+  - Consortium for Mathematics and Its Applications, Successsful Participant
 # CONTACT
   - email: aetheryang@gmail.com
   - mobile: 15505516935
@@ -30,6 +33,8 @@
 # 教育
   - 2011年9月-现在
     中国科学技术大学少年班学院微电子与固体物理专业
+  - GPA: 2.15
+  - 毕业论文：修正引力（MOND)算法的 FPGA 硬件实现
 # 技能
   - Linux, openSUSE 作为生产环境
   - C/C++, ruby
@@ -39,6 +44,7 @@
 # 活动
   - 2013.09.21 自由软件日演讲人
   - 2012至今 opensuse-manuals 中文翻译工作
+  - 美国大学生数学建模竞赛,成功参与
 # 联系方式
   - 电邮：aetheryang@gmail.com
   - 手机：15505516935
