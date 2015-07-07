@@ -9,7 +9,7 @@
     majoring in Applied Physics
     Microelectronics in the Department of Physics
  - GPA: 2.15
- - Graduation thesis
+ - Graduation thesis: Implementing MOND algorithm with FPGA hardware
 # SKILLS
   - Linux, particular openSUSE
   - C/C++, ruby
